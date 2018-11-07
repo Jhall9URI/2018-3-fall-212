@@ -47,21 +47,21 @@ Where idx is the index of the pit being operated on and the returned int is the 
 
 The image below represents the starting state of a game of Mancala Solitaire. Since the starting index i is 1, the game will start at the pit with index 1.
 
-![Mancala Solitaire 1](/lab08/mancala1.png "Mancala Solitaire 1")
+![Mancala Solitaire 1](/lab-08/mancala1.png "Mancala Solitaire 1")
 
 The 3 pieces from the pit are distributed one-by-one following the pointer arrows.
 The pit where the last piece was dropped is the next pit to be removed.
 
-![Mancala Solitaire 2](/lab08/mancala2.png "Mancala Solitaire 2")
+![Mancala Solitaire 2](/lab-08/mancala2.png "Mancala Solitaire 2")
 
 The pieces from this pit are distributed in the same manner as the first pit.
 
-![Mancala Solitaire 3](/lab08/mancala3.png "Mancala Solitaire 3")
+![Mancala Solitaire 3](/lab-08/mancala3.png "Mancala Solitaire 3")
 
 This process continues until there is only one pit remaining.
 Once there is only one pit left, the index of that pit is returned.
 
-![Mancala Solitaire 4](/lab08/mancala4.png "Mancala Solitaire 4")
+![Mancala Solitaire 4](/lab-08/mancala4.png "Mancala Solitaire 4")
 
 \*Although Mancala Solitaire is based on the game Mancala, it would probably be better described as a simulation as opposed to a game,  since there is no real winning or losing.
 
