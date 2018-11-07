@@ -104,7 +104,7 @@ Your objective for this lab will be to do the following (preferrably in order):
 > What is the BigO runtime of append? What is the BigO runtime of removeByIndex?
 
 #### Submission
-Your **Gradescope** submission for this lab will include your `main.cpp` and `mancala.cpp` files containing your class and function implementations, as well as a file `lab08.txt` containing your answers to the above questions
+Your **Gradescope** submission for this lab will include your `main.cpp` and `mancala.cpp` files containing your class and function implementations, as well as a file `lab-08.txt` containing your answers to the above questions
 
 * If you did not finish the lab within the period you should submit the `mancala.cpp` and `main.cpp` files containing everything you were able to implement. 
-* If you did not answer the questions for this week, submit a blank `lab08.txt` file.
+* If you did not answer the questions for this week, submit a blank `lab-08.txt` file.
