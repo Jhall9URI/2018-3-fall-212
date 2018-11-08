@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+    \usepackage{listings}
+    \usepackage{fancyhdr}
+    \usepackage[margin=.8in]{geometry}
+    \usepackage{amsmath}
+    \usepackage{enumitem}
+    \usepackage{hyperref}
+    
+    \linespread{1.2}
+    \setlength{\parindent}{0pt}
+    \setlength{\tabcolsep}{15pt}
+    
+    % ===========================================================================
+    % Header / Footer
+    % ===========================================================================
+    
+    \pagestyle{fancy}
+    \lhead{\scriptsize  CSC 212: Data Structures and Abstractions - Fall 2018}\chead{}\rhead{\scriptsize Weekly Problem Set Solutions \#6}
+    \lfoot{}\cfoot{\scriptsize \thepage~of~\pageref{r:lastpage}}\rfoot{}
+    \renewcommand{\headrulewidth}{0.3pt}
+    \renewcommand{\footrulewidth}{0.3pt}
+    
+    % ===========================================================================
+    % ===========================================================================
+    \begin{document}
+    \thispagestyle{empty}
+    
+    % ===========================================================================
+    \begin{center}
+        {\Large\bf CSC 212: Data Structures and Abstractions}\\
+        \medskip
+        {\Large\bf Fall 2018}\\
+        \medskip
+        {\Large\bf University of Rhode Island}\\
+        \bigskip
+        {\Large\bf Weekly Problem Set \#7}
+    \end{center}
+    
+    Due Thursday 11/8 at the beginning of class. Please turn in neat, and organized, answers hand-written on standard-sized paper \textbf{without any fringe}. At the top of each sheet you hand in, please write your name, and ID.
+    
+    \begin{enumerate}
+        \item For each of the following please provide the worst case time complexity for a Singly Linked List (SLL), as well as a Doubly Linked List (DLL). 
+    
+    \begin{tabular}{l | c | c | c}
+                 &     & SLL          &  \\ 
+        Function & SLL & without Tail & DLL \\ \hline
+        \verb|int size();| & n & n & n \\ \hline
+        \verb|int at(int);| & n & n & n \\ \hline
+        \verb|int front();| & 1 & 1 & 1 \\ \hline
+        \verb|int back();| & 1 & n & 1 \\ \hline
+        \verb|bool empty();| & 1 & 1 & 1 \\ \hline
+        \verb|void clear();| & n & n & n \\ \hline
+        \verb|void set(int, int);| & n & n & n \\ \hline
+        \verb|void push_back(int);| & 1 & n & 1 \\ \hline
+        \verb|int pop_back();| & n & n & 1 \\ \hline
+        \verb|void insert(int, int);| & n & n & n \\ \hline
+        \verb|void erase(int);| & n & n & n \\ \hline
+        \verb|void reverse();| & n & n & n \\ \hline
+    \end{tabular}
+    
+        \item How many pointers are required for a SSL of length n? How many pointers are required for a DLL of length n?\\
+        n + 1; 2n + 2
+        
+        \item Describe how to reverse a SLL without a tail.\\
+        Create 3 nodes, curNode, prevNode and nextNode. Initialize them as curNode = head and prevNode = null. Use curNode to iterate over the list. Set the nextNode to curNode.next and set curNode.next to prevNode. Set prevNode to curNode and curNode to nextNode. When curNode is null, set the head to prevNode.
+        
+        \item What is required to change a linked list into a queue? What about a stack?\\
+        Modifying the API to allow for fewer options, usually just push, pop, and sometimes peek.\\
+        In specific, a queue will only have append and pop\_back (as push and pop), no remove\_at, and will require a head and tail node. On the other hand, a stack will have a push\_back and pop\_back (as push and pop), no remove\_at, and only a head node (typically as "top"). If a peek function is used, it would be the same as the front function.
+        
+        \item Draw the state of an empty stack and an empty queue after running the following functions for each:
+\begin{verbatim}
+push(1); push(2); push(3); pop(); push(4); pop(); pop(); push(5)
+\end{verbatim}
+Stack: [1, 5]; Queue: [4, 5]
+    \end{enumerate}
+    \label{r:lastpage}
+    \end{document}
+        
+    
