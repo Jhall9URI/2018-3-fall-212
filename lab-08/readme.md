@@ -71,6 +71,14 @@ Once there is only one pit left, the index of that pit is returned.
 
 The starter code for this lab is contained within the `mancala.hpp`, `mancala.cpp` and `main.cpp` files. You are given the entire class definition for `MancalaSolver`, which internally uses a circular singly-linked list to solve Mancala Solitaire, along with the entire implementation of the `Pit` class, which corresponds to the nodes in the linked list. You are also given implementations of `MancalaSolver`'s constructor, destructor, and print function.
 
+*You should compile your code with the following line:*
+
+```bash
+g++ -g -std=c++11 mancala.cpp main.cpp -o main
+```
+
+Note that both mancala.cpp *and* main.cpp must be in the compile command, otherwise it will not work.
+
 #### Input/Output
 
 Your program will take a file `filename` which contains the number of pieces in each pit, the number of pits `N` and the starting index `idx`, and will output the index of the winning pit. Thus, your function will receive input as follows:
