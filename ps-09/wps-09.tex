@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+    \usepackage{listings}
+    \usepackage{fancyhdr}
+    \usepackage[margin=.8in]{geometry}
+    \usepackage{amsmath}
+    \usepackage{enumitem}
+    \usepackage{hyperref}
+    \usepackage{tikz}
+    \usetikzlibrary{arrows}
+    \tikzset{
+        treenode/.style = {align=center, inner sep=0pt, text centered,
+            font=\sffamily},
+        arn_n/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black,
+            fill=white, text width=1.5em},
+        arn_r/.style = {treenode, circle, red, draw=red, 
+            text width=1.5em, very thick},
+        arn_x/.style = {treenode, rectangle, draw=black,
+            minimum width=0.5em, minimum height=0.5em},
+        node_num/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black, fill=white, text width=1.5em},
+        node_highlight/.style = {treenode, circle, red, draw=red, text width=1.5em, very thick},
+        node_null/.style = {treenode, rectangle, draw=white, minimum width=0.5em, minimum height=0.5em}
+    }
+    
+    \linespread{1}
+    \setlength{\parindent}{0pt}
+    \setlength{\tabcolsep}{20pt}
+    
+    % ===========================================================================
+    % Header / Footer
+    % ===========================================================================
+    
+    \pagestyle{fancy}
+    \lhead{\scriptsize  CSC 212: Data Structures and Abstractions - Spring 2018}\chead{}\rhead{\scriptsize Weekly Problem Set \#10}
+    \lfoot{}\cfoot{\scriptsize \thepage~of~\pageref{r:lastpage}}\rfoot{}
+    \renewcommand{\headrulewidth}{0.25pt}
+    \renewcommand{\footrulewidth}{0.25pt}
+    
+    % ===========================================================================
+    % ===========================================================================
+    \begin{document}
+    \thispagestyle{empty}
+    
+    % ===========================================================================
+    \begin{center}
+        {\Large\bf CSC 212: Data Structures and Abstractions}\\
+        \medskip
+        {\Large\bf Fall 2018}\\
+        \medskip
+        {\Large\bf University of Rhode Island}\\
+        \bigskip
+        {\Large\bf Weekly Problem Set \#9}
+    \end{center}
+    
+    This is an optional practice assignment!
+    \section{Binary Trees}
+    \begin{enumerate}
+        \item Draw a binary tree after the insertion of the following elements in order: 
+        
+        \verb|[60, 40, 35, 75, 90, 1, 20, 100, 25, 70]|
+        
+        \item Draw a binary tree after the insertion of the following elements in order: 
+        
+        \verb|[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]|
+        
+        \item Explain what differs in the above two trees. Specifically, address how many leaf nodes there are, the depth of the right, and leftmost nodes, and the height of both the left and right subtrees from the root node. 
+        
+        \item If a Binary Tree is complete, does that necessarily mean it is also full? Justify your answer with drawings of trees.
+        
+        \item Draw a binary search tree after the following operations steps:
+    \begin{enumerate}
+        
+        \item Insert: [10, 5, 12, 8, 19, 6, 2, 11, 15, 9, 7]
+        
+        \item Remove: [7, 12, 8, 10]
+    \end{enumerate}
+    \item Write a function to delete binary trees. Be sure to remove nodes in the proper order, so that none get orphaned.
+
+    \item Assume nodes in a BST contain 4 data members: {\it data, depth, left, right}.  Write a recursive function that, given a pointer to the root of a BST, will update every node's {\it depth} to it's own depth in the tree.
+
+    \item Briefly explain the difference between in-order, post-order, and pre-order traversals.
+
+    \item Let $T$ be a full k-ary tree, where $k=2$ (a.k.a. {\it binary tree}), with $n$ nodes.  Let $h$ denote the height of $T$.
+    \begin{enumerate}
+        \item What is the minimum number of leaves for $T$?  Justify your answer.
+
+        \item What is the maximum number of leaves for $T$?  Justify your answer.
+        
+        \item What is the minimum number of internal nodes for $T$?  Justify your answer.
+        
+        \item What is the maximum number of internal nodes for $T$?  Justify your answer.
+    \end{enumerate}
+
+    \item Give a $O(n)$ time algorithm for computing the \verb|height| of the tree, where $n$ is the number of nodes.
+
+    \item Show that the maximum number of nodes in a binary tree of height $h$ is $2^{h+1}-1$.
+
+    \end{enumerate}
+    
+    \label{r:lastpage}
+    
+    \end{document}
+        
+    
