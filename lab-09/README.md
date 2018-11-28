@@ -35,7 +35,7 @@ Once you feel confident that your insert function is working properly it is time
 The search function uses the following signature:
 
 ```c++
-  void BSTree::search(unsigned int k)
+  bool BSTree::search(unsigned int k)
 ```
 It searches the tree for the key k. At _each node it visits_, it should print the associated character to the console. Once it finds k, it should stop searching and printing values. Make sure that your function prints out the character stored in the node at every recursive iteration.
 
