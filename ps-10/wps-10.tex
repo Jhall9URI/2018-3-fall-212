@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+    \usepackage{listings}
+    \usepackage{fancyhdr}
+    \usepackage[margin=.8in]{geometry}
+    \usepackage{amsmath}
+    \usepackage{enumitem}
+    \usepackage{hyperref}
+    \usepackage{tikz}
+    \usetikzlibrary{arrows}
+    \tikzset{
+        treenode/.style = {align=center, inner sep=0pt, text centered,
+            font=\sffamily},
+        arn_n/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black,
+            fill=white, text width=1.5em},
+        arn_r/.style = {treenode, circle, red, draw=red, 
+            text width=1.5em, very thick},
+        arn_x/.style = {treenode, rectangle, draw=black,
+            minimum width=0.5em, minimum height=0.5em},
+        node_num/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black, fill=white, text width=1.5em},
+        node_highlight/.style = {treenode, circle, red, draw=red, text width=1.5em, very thick},
+        node_null/.style = {treenode, rectangle, draw=white, minimum width=0.5em, minimum height=0.5em}
+    }
+    
+    \linespread{1}
+    \setlength{\parindent}{0pt}
+    \setlength{\tabcolsep}{20pt}
+    
+    % ===========================================================================
+    % Header / Footer
+    % ===========================================================================
+    
+    \pagestyle{fancy}
+    \lhead{\scriptsize  CSC 212: Data Structures and Abstractions - Spring 2018}\chead{}\rhead{\scriptsize Weekly Problem Set \#10}
+    \lfoot{}\cfoot{\scriptsize \thepage~of~\pageref{r:lastpage}}\rfoot{}
+    \renewcommand{\headrulewidth}{0.25pt}
+    \renewcommand{\footrulewidth}{0.25pt}
+    
+    % ===========================================================================
+    % ===========================================================================
+    \begin{document}
+    \thispagestyle{empty}
+    
+    % ===========================================================================
+    \begin{center}
+        {\Large\bf CSC 212: Data Structures and Abstractions}\\
+        \medskip
+        {\Large\bf Fall 2018}\\
+        \medskip
+        {\Large\bf University of Rhode Island}\\
+        \bigskip
+        {\Large\bf Weekly Problem Set \#10}
+    \end{center}
+    
+    Due Thursday 11/15 before class. Please turn in neat, and organized, answers hand-written on standard-sized paper \textbf{without any fringe}. At the top of each sheet you hand in, please write your name, and ID.
+    \section{2-3 Trees}
+\begin{enumerate}
+    \item Draw a 2-3 tree after inserting the following elements: [6, 2, 8, 5, 10, 3, 1, 7, 9, 4]
+
+    \item What steps does a 2-3 tree search algorithm take when searching the drawn tree for 5? Assume that the lesser element of a 2-node is checked first.
+    
+    \item True or False: while inserting nodes into a 2-3 tree, all required transformations are purely local. Explain your response.
+    
+\end{enumerate}
+
+\section{Left Leaning Red-Black Trees}
+\begin{enumerate}
+    \item Draw a Red-Black tree after inserting the following elements: [1, 2, 3, 4, 5]
+
+    \item Can Red-Black Trees be represented as 2-3 trees? If so, how?
+
+    \item Why is it advantageous to have balanced trees?
+
+    \item True or False: as you insert nodes into a Red-Black Tree, the height is strictly increasing?
+\end{enumerate}
+    
+    \label{r:lastpage}
+    
+    \end{document}
+        
+    
