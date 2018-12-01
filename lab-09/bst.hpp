@@ -23,10 +23,7 @@ class BSTree {
 private:
     BSTNode *root;
 
-    /* Helper Methods */
-    bool search(int val, BSTNode* node);
-    void insert(int val, char let, BSTNode* node);
-    void clear(BSTNode* node);
+    /* Define any private helper methods you may use here */
 
 public:
     BSTree();
